@@ -1,12 +1,16 @@
 import socket
 import cv2
 import threading
+import os
 
 s = socket.socket()
 s.connect(("localhost", 9000))
 
 class variable:
     i = 0
+
+if not os.path.exists("chace"):
+    os.mkdir("chace")
 
 # fungsi built in
 class function:
